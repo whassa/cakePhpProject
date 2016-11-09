@@ -11,7 +11,7 @@
 
 <div class="container" style="margin-top: 60px">
 	<div class="col-md-8">
-    <?= $this->Form->create($pay) ?>
+    <?= $this->Form->create($pays) ?>
     <fieldset>
         <legend><?= __('Add Pay') ?></legend>
         <?php

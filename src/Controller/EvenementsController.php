@@ -55,7 +55,7 @@ class EvenementsController extends AppController
 		
         if (empty($errors)) {
             $Evenements = $this->Evenements->newEntity($this->request->data);
-
+			$Evenements->is_done = 0;
             if ($this->Evenements->save($Evenements)) {
                 $response = ['result' => 'success'];
             }

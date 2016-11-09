@@ -61,7 +61,7 @@ class PaysController extends AppController
     {
         $pays = $this->Pays->newEntity();
         if ($this->request->is('post')) {
-            $pays = $this->Pays->patchEntity($pay, $this->request->data);
+            $pays = $this->Pays->patchEntity($pays, $this->request->data);
             if ($this->Pays->save($pays)) {
                 $this->Flash->success(__('The pay has been saved.'));
 
