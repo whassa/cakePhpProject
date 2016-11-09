@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/site.0.0.01/src/View/AjaxView.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/site.0.0.01/src/Controller/UserController.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/site.0.0.01/src/Model/Entity/User.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/site.0.0.01/src/Controller/AccueilController.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/site.0.0.01/src/Controller/PassagerController.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/site.0.0.01/src/Template/Pages/home.ctp</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/site.0.0.01/src/Model/Entity/Booking.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/site.0.0.01/src/Model/Table/UserTable.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/site.0.0.01/src/Shell/ConsoleShell.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/site.0.0.01/src/Template/Bookings/edit.ctp</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/site.0.0.01/src/Template/Bookings/index.ctp</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/site.0.0.01/src/View/AppView.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/site.0.0.01/src/Template/Bookings/add.ctp</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/site.0.0.01/src/Template/Error/error500.ctp</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/site.0.0.01/src/Model/Entity/Passager.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/site.0.0.01/src/Model/Table/PassagerTable.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/site.0.0.01/src/Template/Bookings/view.ctp</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/site.0.0.01/src/Application.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/site.0.0.01/src/Template/Error/error400.ctp</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/site.0.0.01/src/Controller/AppController.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/site.0.0.01/src/Template/Accueil/home.ctp</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/site.0.0.01/src/Model/Table/BookingsTable.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/site.0.0.01/src/Controller/BookingsController.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/site.0.0.01/src/Template/Passager/add.ctp</file>
+        </group>
+    </open-files>
+</project-private>

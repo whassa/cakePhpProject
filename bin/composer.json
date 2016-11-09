@@ -1,0 +1,5 @@
+{
+    "require": {
+        "cakephp/localized": "^3.0"
+    }
+}

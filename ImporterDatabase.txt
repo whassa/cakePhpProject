@@ -1,0 +1,1 @@
+Aller sur phpmyadmin et allez dans la section importer et créer une nouvelle database Africa_Airline et importer celle-ci
