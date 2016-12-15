@@ -1,4 +1,143 @@
-var TodoApp = {};
+// angular js codes will be here
+var app = angular.module('myApp', []);
+app.controller('evenementsCtrl', function ($scope, $http) {
+    // more angular JS codes will be here
+    $scope.showCreateForm = function () {
+        // clear form
+        $scope.clearForm();
+
+        // change modal title
+        $('#modal-evenement-title').text("Create New evenement");
+
+        // hide update evenement button
+        $('#btn-update-evenement').hide();
+
+        // show create evenement button
+        $('#btn-create-evenement').show();
+
+    }
+    // clear variable / form values
+    $scope.clearForm = function () {
+        $scope.id = "";
+        $scope.name = "";
+    }
+    // create new evenement 
+    $scope.createevenement = function () {
+
+        // fields in key-value pairs
+        $http.post('evenements/add.json', {
+            'name': $scope.name
+        }
+        ).success(function (data, status, headers, config) {
+            //console.log(data.response.result);
+            // tell the user new evenement was created
+            Materialize.toast(data.response.result, 4000);
+
+            // close modal
+            $('#modal-evenement-form').modal('close');
+
+            // clear modal content
+            $scope.clearForm();
+
+            // refresh the list
+            $scope.getAll();
+        });
+    }
+    // read evenements
+    $scope.getAll = function () {
+        $http.get("evenements/index.json").success(function (response) {
+            $scope.names = response.evenements;
+        });
+    }
+	$scope.getAllFinish = function () {
+        $http.get("evenements/indexFinished.json").success(function (response) {
+            $scope.swags = response.finished;
+        });
+    }
+    // retrieve record to fill out the form
+    $scope.readOne = function (id) {
+
+        // change modal title
+        $('#modal-evenement-title').text("Edit evenement");
+
+        // show udpate evenement button
+        $('#btn-update-evenement').show();
+
+        // show create evenement button
+        $('#btn-create-evenement').hide();
+
+        // post id of evenement to be edited
+        $http.post('Evenements/view.json', {
+            'id': id
+        })
+                .success(function (data, status, headers, config) {
+
+                    // put the values in form
+                    $scope.id = data.evenement.id;
+                    $scope.name = data.evenement.name;
+                    // show modal
+                    $('#modal-evenement-form').modal('open');
+                })
+                .error(function (data, status, headers, config) {
+                    Materialize.toast('Unable to retrieve record.', 4000);
+                });
+    }
+    // update evenement record / save changes
+    $scope.updateevenement = function () {
+        $http.post('Evenements/edit.json', {
+            'id': $scope.id,
+            'name': $scope.name,
+        })
+                .success(function (data, status, headers, config) {
+                    // tell the user evenement record was updated
+                    console.log(data.response.result);
+                    Materialize.toast(data.response.result, 4000);
+
+					
+					
+                    // close modal
+                    $('#modal-evenement-form').modal('close');
+
+                    // clear modal content
+                    $scope.clearForm();
+
+                    // refresh the evenement list
+                    $scope.getAll();
+                });
+    }
+    // delete evenement
+    $scope.deleteevenement = function (id) {
+
+        // ask the user if he is sure to delete the record
+        if (confirm("Are you sure?")) {
+            // post the id of evenement to be deleted
+            $http.post('evenements/finish.json', {
+                'id': id
+            }).success(function (data, status, headers, config) {
+                // tell the user evenement was deleted
+                Materialize.toast(data.response.result, 4000);
+
+                // refresh the list
+                $scope.getAll();
+				$scope.getAllFinish();
+            });
+        }
+    }
+});
+
+// jquery codes will be here
+$(document).ready(function () {
+    // initialize modal
+    $('.modal').modal();
+});
+
+
+
+
+
+
+
+/** var TodoApp = {};
 (function () {
     TodoApp.getEvenements = function () {
         $.get('evenements/get.json', function (response) {
@@ -81,8 +220,8 @@ var TodoApp = {};
 })();
 
 (function ($) {
-    $("#add-Events").submit(function (event) {
-        $('#events-error').remove();
+    $("#add-evenements").submit(function (evenement) {
+        $('#evenements-error').remove();
         $('.form-group').removeClass('has-error');
 		
         var $form = $(this),
@@ -91,7 +230,7 @@ var TodoApp = {};
         var posting = $.post(url,{ name:name});
         posting.done(function (response) {	
             if (response.response.result == 'success') {
-                $('#incomplete-events').empty();
+                $('#incomplete-evenements').empty();
                 $('#inputLarge').val('');
                 TodoApp.getEvenements();
             } else if (response.response.result == 'fail') {
@@ -100,7 +239,7 @@ var TodoApp = {};
             }
         });
 	
-        event.preventDefault();
+        evenement.prevenementDefault();
     });
 
     $(document).on('click', ':checkbox', function () {
@@ -118,7 +257,8 @@ var TodoApp = {};
 	
     TodoApp.getEvenements();
     TodoApp.getDone();
-})(jQuery);
+})(jQuery); **/
+
 
 
 

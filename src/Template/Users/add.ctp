@@ -4,7 +4,6 @@
         <li><?= $this->Html->link(__('List Users'), ['action' => 'index']) ?></li>
     </ul>
 </nav>
-
 <div class="users form large-9 medium-8 columns content">
     <?= $this->Form->create($user) ?>
     <fieldset>
@@ -12,7 +11,10 @@
         <?php
             echo $this->Form->input('username');
             echo $this->Form->input('password');
-            echo $this->Form->input('role', ['options' => ['admin' => 'admin', 'superuser' => 'superuse']]);
+            echo $this->Form->input('role');
+            echo $this->Form->input('is_ok');
+            echo $this->Form->input('identifier');
+            echo $this->Form->input('email');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

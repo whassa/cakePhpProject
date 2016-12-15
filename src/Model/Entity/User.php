@@ -12,6 +12,9 @@ use Cake\Auth\DefaultPasswordHasher;
  * @property string $role
  * @property \Cake\I18n\Time $created
  * @property \Cake\I18n\Time $modified
+ * @property string $is_ok
+ * @property string $identifier
+ * @property string $email
  */
 class User extends Entity
 {
@@ -38,7 +41,7 @@ class User extends Entity
     protected $_hidden = [
         'password'
     ];
-	 protected function _setPassword($password)
+	protected function _setPassword($password)
     {
         return (new DefaultPasswordHasher)->hash($password);
     }

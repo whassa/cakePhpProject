@@ -16,7 +16,7 @@ namespace App\Controller;
 
 use Cake\Controller\Controller;
 use Cake\Event\Event;
-
+use Cake\I18n\I18n;
 /**
  * Application Controller
  *
@@ -39,6 +39,7 @@ class AppController extends Controller
      */
     public function initialize()
     {
+		
 		$this->loadComponent('RequestHandler');
 		$this->loadComponent('Flash');
         $this->loadComponent('Auth',
@@ -56,8 +57,8 @@ class AppController extends Controller
                 'action' => 'login'
             ]
         ]);
-
-        $this->Auth->allow(['display']);
+		I18n::Locale($this->request->session()->read('Config.language'));
+        $this->Auth->allow(['display','changeLang']);
 		/*
         $this->loadComponent('Flash');
 		$this->loadComponent('Auth', [
@@ -75,7 +76,11 @@ class AppController extends Controller
 		]);
 	*/
     }
-
+	public function changeLang($lang = 'en_US') {
+        I18n::locale($lang);
+        $this->request->session()->write('Config.language', $lang);
+        return $this->redirect($this->request->referer());
+    }
 	
 	 public function beforeFilter(Event $event)
     {
@@ -119,11 +124,18 @@ class AppController extends Controller
 	public function isAuthorized($user)
 {
     // Admin peuvent accéder à chaque action
-    if (isset($user['role']) && $user['role'] === 'admin' ) {
+    if (isset($user['role']) && $user['role'] === 'admin' && $user['is_ok'] == 1) {
         return true;
     }
+	if (isset($user['role']) && $user['role'] === 'superuser' && $user['is_ok'] == 1) {
+        return true;
+    } else if (isset($user['role']) && $user['role'] === 'superuser' && $user['is_ok'] == 0) {
+		$this->Flash->connexion('Vous n\'avez pas confirmer votre lien, veuillez le confirmer avec le lien suivant : <a href="http://'.$_SERVER['HTTP_HOST'].$this->request->webroot .'users/emailAddfromNothing"> http://www.site.0.0.2/users/emailAdd</a>');
+    }
+	
+	
     // Par défaut refuser
-    return true;
+    return false;
 }
 
 }

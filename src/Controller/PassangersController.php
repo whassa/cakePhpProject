@@ -61,24 +61,23 @@ class PassangersController extends AppController
         $provinces = $this->Pays->Provinces->find('list', [
             'conditions' => ['provinces.pays_id' => $pays_id],
         ]);
-		
-		
 		$passanger = $this->Passangers->newEntity();
         if ($this->request->is('post')) {
-            $passanger = $this->Passangers->patchEntity($passanger, $this->request->data);
+				$passanger = $this->Passangers->patchEntity($passanger, $this->request->data);
 			
-			$poys = $this->Pays->get($passanger->pays_id, [
-				'contain' => []
-			]);
-			$passanger->pays = $poys->nom;
-			$passanger->province = $passanger->province_id;
-            if ($this->Passangers->save($passanger)) {
-                $this->Flash->success(__('The passanger has been saved.'));
+				$poys = $this->Pays->get($passanger->pays_id, [
+					'contain' => []
+				]);
+				$passanger->pays = $poys->nom;
+				$passanger->province = $passanger->province_id;
+				if ($this->Passangers->save($passanger)) {
+					$this->Flash->success(__('The passanger has been saved.'));
 
-                return $this->redirect(['action' => 'index']);
+					return $this->redirect(['action' => 'index']);
             } else {
                 $this->Flash->error(__('The passanger could not be saved. Please, try again.'));
             }
+			
         }
     
         $this->set(compact('pays'));

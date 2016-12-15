@@ -15,6 +15,7 @@ class EvenementsController extends AppController
 {
     parent::initialize();
     $this->Auth->allow(['get']);
+	 $this->Auth->allow(['index','indexFinished']);
 }
     /**
      * Index method
@@ -23,9 +24,28 @@ class EvenementsController extends AppController
      */
     public function index()
     {
-       
+		//$evenements = $this->paginate($this->Evenements);
+		
+		$query = $this->Evenements->find('all')->where(['Evenements.is_done' => 0]);
+		$results = $query->all();
+		$evenements = $results->toArray();
+		
+        $this->set(compact('evenements'));
+        $this->set('_serialize', ['evenements']);
     }
 
+	public function indexFinished()
+    {
+		//$evenements = $this->paginate($this->Evenements);
+		
+		$query = $this->Evenements->find('all')->where(['Evenements.is_done' => 1]);
+		$results = $query->all();
+		$finished = $results->toArray();
+		
+        $this->set(compact('finished'));
+        $this->set('_serialize', ['finished']);
+    }
+	
     /**
      * View method
      *
@@ -35,6 +55,10 @@ class EvenementsController extends AppController
      */
     public function view($id = null)
     {
+		$data = $this->request->input('json_decode');
+        //debug($data); die();
+        $id = $data->id;
+        
         $evenement = $this->Evenements->get($id, [
             'contain' => []
         ]);
@@ -50,21 +74,22 @@ class EvenementsController extends AppController
      */
     public function add()
     {
-        $response = ['result' => 'false'];
-        $errors = $this->Evenements->validator()->errors($this->request->data);
-		
-        if (empty($errors)) {
-            $Evenements = $this->Evenements->newEntity($this->request->data);
-			$Evenements->is_done = 0;
-            if ($this->Evenements->save($Evenements)) {
-                $response = ['result' => 'success'];
+        $evenements = $this->Evenements->newEntity($this->request->data);
+		  if ($this->request->is('post')) {
+            $evenements = $this->Evenements->patchEntity($evenements, $this->request->data);
+			$evenements->is_done = 0;
+            if ($this->Evenements->save($evenements)) {
+                //$this->Flash->success(__('The product has been saved.'));
+                //return $this->redirect(['action' => 'index']);
+                $response = ['result' => 'Events was created.'];
+            } else {
+                //$this->Flash->error(__('The product could not be saved. Please, try again.'));
+                $response = $errors;
             }
-        } else {
-            $response['error'] = $errors;
         }
-		
         $this->set(compact('response'));
         $this->set('_serialize', ['response']);
+
     }
 
     /**
@@ -76,21 +101,26 @@ class EvenementsController extends AppController
      */
     public function edit($id = null)
     {
-        $response = ['result' => 'fail'];
-        $errors = $this->Evenements->validator()->errors($this->request->data);
-        if (empty($errors)) {
-
-            $Evenements = $this->Evenements->newEntity($this->request->data);
-			$id = $this->request->data['id'];
-			$Evenements->id = $id;
-            if ($this->Evenements->save($Evenements)) {
-                $response = ['result' => 'success'];
-            }
-        } else {
-            $response['error'] = $errors;
-        }
+		$data = $this->request->input('json_decode');
+        //debug($data); die();
+        $id = $data->id;
+        $evenements = $this->Evenements->get($id, [
+            'contain' => []
+        ]);
+		if ($this->request->is('post')) {
+			$evenements = $this->Evenements->patchEntity($evenements, $this->request->data);
+			if ($this->Evenements->save($evenements)) {
+					$response = ['result' => 'Events was finished.'];
+			} else {
+				//$this->Flash->error(__('The product could not be saved. Please, try again.'));
+				$response = ['result' => 'Unable to update Events.'];
+			 }
+		}
+        //$his->set(compact('product'));
+        //$this->set('_serialize', ['product']);
+		
         $this->set(compact('response'));
-        $this->set('_serialize', ['response']);
+        $this->set('_serialize', ['response']);;
 		
 		
     }
@@ -104,19 +134,28 @@ class EvenementsController extends AppController
 		
     }
 	
-	public function finish($EvenementsId = null) {
-        $response = ['result' => 'fail'];
-        if (!is_null($EvenementsId)) {
-            $evenements = TableRegistry::get('Evenements');
-            $Evenement = $evenements->get($EvenementsId);
-            $evenements->patchEntity($Evenement, ['is_done' => 1]);
-            if ($evenements->save($Evenement)) {
-                $response = ['result' => 'success'];
-            }
-        }
+	public function finish($id = null) {
+		$data = $this->request->input('json_decode');
+        //debug($data); die();
+        $id = $data->id;
+        $evenements = $this->Evenements->get($id, [
+            'contain' => []
+        ]);
+		if ($this->request->is('post')) {
+			$evenements = $this->Evenements->patchEntity($evenements, $this->request->data);
+			$evenements->is_done = 1;
+			if ($this->Evenements->save($evenements)) {
+					$response = ['result' => 'Events was finished.'];
+			} else {
+				//$this->Flash->error(__('The product could not be saved. Please, try again.'));
+				$response = ['result' => 'Unable to update Events.'];
+			 }
+		}
+        //$his->set(compact('product'));
+        //$this->set('_serialize', ['product']);
 		
         $this->set(compact('response'));
-        $this->set('_serialize', ['response']);
+        $this->set('_serialize', ['response']);;
     }
     /**
      * Delete method

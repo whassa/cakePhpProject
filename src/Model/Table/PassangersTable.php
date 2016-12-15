@@ -32,17 +32,20 @@ class PassangersTable extends Table
     public function initialize(array $config)
     {
         parent::initialize($config);
-
+		
         $this->table('passangers');
         $this->displayField('prenom');
         $this->primaryKey('id');
-
+		
+		//$this->addBehavior('Translate', ['fields' => ['prenom']]);
+		
         $this->hasMany('Bookings', [
             'foreignKey' => 'passanger_id'
         ]);
         $this->hasMany('PassangerFile', [
             'foreignKey' => 'passanger_id'
         ]);
+    
     }
 
     /**

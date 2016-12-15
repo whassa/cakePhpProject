@@ -41,6 +41,7 @@
                 <td><?= h($passanger->pays) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $passanger->id]) ?>
+					<?= $this->Html->link(__('pdf'), ['action' => 'view', $passanger->id . '.pdf']) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $passanger->id]) ?>
                     <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $passanger->id], ['confirm' => __('Are you sure you want to delete # {0}?', $passanger->id)]) ?>
                 </td>

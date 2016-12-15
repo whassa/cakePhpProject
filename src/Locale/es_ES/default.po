@@ -1,0 +1,432 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-11-23 15:18-0500\n"
+"PO-Revision-Date: 2016-11-23 15:19-0500\n"
+"Language-Team: EMAIL@ADDRESS\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.9\n"
+"Last-Translator: \n"
+"Language: es\n"
+
+#: Controller/AppController.php:92
+msgid "Invalid username or password, try again"
+msgstr ""
+
+#: Controller/BookingsController.php:58;85
+msgid "The booking has been saved."
+msgstr ""
+
+#: Controller/BookingsController.php:62;89
+msgid "The booking could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/BookingsController.php:109
+msgid "The booking has been deleted."
+msgstr ""
+
+#: Controller/BookingsController.php:111
+msgid "The booking could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/JourneyLegsController.php:58;86
+msgid "The journey leg has been saved."
+msgstr ""
+
+#: Controller/JourneyLegsController.php:62;90
+msgid "The journey leg could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/JourneyLegsController.php:111
+msgid "The journey leg has been deleted."
+msgstr ""
+
+#: Controller/JourneyLegsController.php:113
+msgid "The journey leg could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/LegsController.php:55;81
+msgid "The leg has been saved."
+msgstr ""
+
+#: Controller/LegsController.php:59;85
+msgid "The leg could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/LegsController.php:104
+msgid "The leg has been deleted."
+msgstr ""
+
+#: Controller/LegsController.php:106
+msgid "The leg could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/PassangersController.php:55;81
+msgid "The passanger has been saved."
+msgstr ""
+
+#: Controller/PassangersController.php:59;85
+msgid "The passanger could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/PassangersController.php:104
+msgid "The passanger has been deleted."
+msgstr ""
+
+#: Controller/PassangersController.php:106
+msgid "The passanger could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:59;85
+msgid "The user has been saved."
+msgstr ""
+
+#: Controller/UsersController.php:63;89
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:108
+msgid "The user has been deleted."
+msgstr ""
+
+#: Controller/UsersController.php:110
+msgid "The user could not be deleted. Please, try again."
+msgstr ""
+
+#: Template/Bookings/add.ctp:3 Template/Bookings/edit.ctp:3
+#: Template/Bookings/index.ctp:3;20 Template/Bookings/view.ctp:3;41
+#: Template/JourneyLegs/add.ctp:3 Template/JourneyLegs/edit.ctp:3
+#: Template/JourneyLegs/index.ctp:3;19 Template/JourneyLegs/view.ctp:3
+#: Template/Legs/add.ctp:3 Template/Legs/edit.ctp:3
+#: Template/Legs/index.ctp:3;17 Template/Legs/view.ctp:3;35
+#: Template/Passangers/add.ctp:3 Template/Passangers/edit.ctp:3
+#: Template/Passangers/index.ctp:3;21 Template/Passangers/view.ctp:3
+#: Template/Users/add.ctp:3 Template/Users/edit.ctp:3
+#: Template/Users/index.ctp:3;18 Template/Users/view.ctp:3
+msgid "Actions"
+msgstr "Acciones"
+
+#: Template/Bookings/add.ctp:4 Template/Bookings/edit.ctp:10
+#: Template/Bookings/view.ctp:6 Template/JourneyLegs/add.ctp:5
+#: Template/JourneyLegs/edit.ctp:11 Template/JourneyLegs/index.ctp:5
+#: Template/JourneyLegs/view.ctp:8
+msgid "List Bookings"
+msgstr ""
+
+#: Template/Bookings/add.ctp:5 Template/Bookings/edit.ctp:11
+#: Template/Bookings/index.ctp:5 Template/Bookings/view.ctp:8
+#: Template/Passangers/add.ctp:4 Template/Passangers/edit.ctp:10
+#: Template/Passangers/view.ctp:6
+msgid "List Passangers"
+msgstr "Lista de pasajeros"
+
+#: Template/Bookings/add.ctp:6 Template/Bookings/edit.ctp:12
+#: Template/Bookings/index.ctp:6 Template/Bookings/view.ctp:9
+#: Template/Passangers/index.ctp:4 Template/Passangers/view.ctp:7
+msgid "New Passanger"
+msgstr ""
+
+#: Template/Bookings/add.ctp:7 Template/Bookings/edit.ctp:13
+#: Template/Bookings/index.ctp:7 Template/Bookings/view.ctp:10
+#: Template/JourneyLegs/add.ctp:4 Template/JourneyLegs/edit.ctp:10
+#: Template/JourneyLegs/view.ctp:6 Template/Legs/add.ctp:5
+#: Template/Legs/edit.ctp:11 Template/Legs/index.ctp:5 Template/Legs/view.ctp:8
+msgid "List Journey Legs"
+msgstr ""
+
+#: Template/Bookings/add.ctp:8 Template/Bookings/edit.ctp:14
+#: Template/Bookings/index.ctp:8 Template/Bookings/view.ctp:11
+#: Template/JourneyLegs/index.ctp:4 Template/JourneyLegs/view.ctp:7
+#: Template/Legs/add.ctp:6 Template/Legs/edit.ctp:12 Template/Legs/index.ctp:6
+#: Template/Legs/view.ctp:9
+msgid "New Journey Leg"
+msgstr ""
+
+#: Template/Bookings/add.ctp:14
+msgid "Add Booking"
+msgstr ""
+
+#: Template/Bookings/add.ctp:21 Template/Bookings/edit.ctp:28
+#: Template/JourneyLegs/add.ctp:20 Template/JourneyLegs/edit.ctp:26
+#: Template/Legs/add.ctp:18 Template/Legs/edit.ctp:24
+#: Template/Passangers/add.ctp:22 Template/Passangers/edit.ctp:28
+#: Template/Users/add.ctp:17 Template/Users/edit.ctp:23
+msgid "Submit"
+msgstr "Someter"
+
+#: Template/Bookings/edit.ctp:5 Template/Bookings/index.ctp:33
+#: Template/Bookings/view.ctp:50 Template/JourneyLegs/edit.ctp:5
+#: Template/JourneyLegs/index.ctp:31 Template/Legs/edit.ctp:5
+#: Template/Legs/index.ctp:29 Template/Legs/view.ctp:44
+#: Template/Passangers/edit.ctp:5 Template/Passangers/index.ctp:39
+#: Template/Users/edit.ctp:5 Template/Users/index.ctp:33
+msgid "Delete"
+msgstr "Borrar"
+
+#: Template/Bookings/edit.ctp:7 Template/Bookings/index.ctp:33
+#: Template/Bookings/view.ctp:5;50 Template/JourneyLegs/edit.ctp:7
+#: Template/JourneyLegs/index.ctp:31 Template/JourneyLegs/view.ctp:5
+#: Template/Legs/edit.ctp:7 Template/Legs/index.ctp:29
+#: Template/Legs/view.ctp:5;44 Template/Passangers/edit.ctp:7
+#: Template/Passangers/index.ctp:39 Template/Passangers/view.ctp:5
+#: Template/Users/edit.ctp:7 Template/Users/index.ctp:33
+#: Template/Users/view.ctp:5
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: Template/Bookings/edit.ctp:20 Template/Bookings/view.ctp:4
+msgid "Edit Booking"
+msgstr ""
+
+#: Template/Bookings/index.ctp:4 Template/Bookings/view.ctp:7
+#: Template/JourneyLegs/add.ctp:6 Template/JourneyLegs/edit.ctp:12
+#: Template/JourneyLegs/index.ctp:6 Template/JourneyLegs/view.ctp:9
+msgid "New Booking"
+msgstr ""
+
+#: Template/Bookings/index.ctp:12
+msgid "Bookings"
+msgstr "Reservas"
+
+#: Template/Bookings/index.ctp:31 Template/Bookings/view.ctp:48
+#: Template/JourneyLegs/index.ctp:29 Template/Legs/index.ctp:27
+#: Template/Legs/view.ctp:42 Template/Passangers/index.ctp:37
+#: Template/Users/index.ctp:31
+msgid "View"
+msgstr ""
+
+#: Template/Bookings/index.ctp:32 Template/Bookings/view.ctp:49
+#: Template/JourneyLegs/index.ctp:30 Template/Legs/index.ctp:28
+#: Template/Legs/view.ctp:43 Template/Passangers/index.ctp:38
+#: Template/Users/index.ctp:32
+msgid "Edit"
+msgstr "Editar"
+
+#: Template/Bookings/index.ctp:41 Template/JourneyLegs/index.ctp:39
+#: Template/Legs/index.ctp:37 Template/Passangers/index.ctp:47
+#: Template/Users/index.ctp:41
+msgid "previous"
+msgstr "anterior"
+
+#: Template/Bookings/index.ctp:43 Template/JourneyLegs/index.ctp:41
+#: Template/Legs/index.ctp:39 Template/Passangers/index.ctp:49
+#: Template/Users/index.ctp:43
+msgid "next"
+msgstr "siguiente"
+
+#: Template/Bookings/view.ctp:5
+msgid "Delete Booking"
+msgstr ""
+
+#: Template/Bookings/view.ctp:18
+msgid "Passanger"
+msgstr "Pasajero"
+
+#: Template/Bookings/view.ctp:22 Template/JourneyLegs/view.ctp:26
+#: Template/Legs/view.ctp:16 Template/Passangers/view.ctp:46
+#: Template/Users/view.ctp:26
+msgid "Id"
+msgstr ""
+
+#: Template/Bookings/view.ctp:26
+msgid "Numberinparty"
+msgstr ""
+
+#: Template/Bookings/view.ctp:30
+msgid "Datebooking"
+msgstr ""
+
+#: Template/Bookings/view.ctp:35 Template/Legs/view.ctp:29
+msgid "Related Journey Legs"
+msgstr ""
+
+#: Template/Bookings/view.ctp:39 Template/Legs/view.ctp:33
+msgid "Booking Id"
+msgstr ""
+
+#: Template/Bookings/view.ctp:40 Template/Legs/view.ctp:34
+msgid "Leg Id"
+msgstr ""
+
+#: Template/JourneyLegs/add.ctp:7 Template/JourneyLegs/edit.ctp:13
+#: Template/JourneyLegs/index.ctp:7 Template/JourneyLegs/view.ctp:10
+#: Template/Legs/add.ctp:4 Template/Legs/edit.ctp:10 Template/Legs/view.ctp:6
+msgid "List Legs"
+msgstr ""
+
+#: Template/JourneyLegs/add.ctp:8 Template/JourneyLegs/edit.ctp:14
+#: Template/JourneyLegs/index.ctp:8 Template/JourneyLegs/view.ctp:11
+#: Template/Legs/index.ctp:4 Template/Legs/view.ctp:7
+msgid "New Leg"
+msgstr ""
+
+#: Template/JourneyLegs/add.ctp:14
+msgid "Add Journey Leg"
+msgstr ""
+
+#: Template/JourneyLegs/edit.ctp:20 Template/JourneyLegs/view.ctp:4
+msgid "Edit Journey Leg"
+msgstr ""
+
+#: Template/JourneyLegs/index.ctp:12
+msgid "Journey Legs"
+msgstr ""
+
+#: Template/JourneyLegs/view.ctp:5
+msgid "Delete Journey Leg"
+msgstr ""
+
+#: Template/JourneyLegs/view.ctp:18
+msgid "Booking"
+msgstr ""
+
+#: Template/JourneyLegs/view.ctp:22
+msgid "Leg"
+msgstr ""
+
+#: Template/Layout/error.ctp:35
+msgid "Error"
+msgstr ""
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr ""
+
+#: Template/Legs/add.ctp:12
+msgid "Add Leg"
+msgstr ""
+
+#: Template/Legs/edit.ctp:18 Template/Legs/view.ctp:4
+msgid "Edit Leg"
+msgstr ""
+
+#: Template/Legs/index.ctp:10
+msgid "Legs"
+msgstr ""
+
+#: Template/Legs/view.ctp:5
+msgid "Delete Leg"
+msgstr ""
+
+#: Template/Legs/view.ctp:20
+msgid "Actual Departure Time"
+msgstr ""
+
+#: Template/Legs/view.ctp:24
+msgid "Actual Arrival Time"
+msgstr ""
+
+#: Template/Passangers/add.ctp:10
+msgid "Add Passanger"
+msgstr ""
+
+#: Template/Passangers/edit.ctp:16 Template/Passangers/view.ctp:4
+msgid "Edit Passanger"
+msgstr ""
+
+#: Template/Passangers/index.ctp:8
+msgid "Passangers"
+msgstr "Pasajeros"
+
+#: Template/Passangers/view.ctp:5
+msgid "Delete Passanger"
+msgstr ""
+
+#: Template/Passangers/view.ctp:14
+msgid "Prenom"
+msgstr "apellido"
+
+#: Template/Passangers/view.ctp:18
+msgid "Nom"
+msgstr "Nombre"
+
+#: Template/Passangers/view.ctp:22
+msgid "Telephone"
+msgstr ""
+
+#: Template/Passangers/view.ctp:26
+msgid "Email"
+msgstr ""
+
+#: Template/Passangers/view.ctp:30
+msgid "Adresse"
+msgstr ""
+
+#: Template/Passangers/view.ctp:34
+msgid "Ville"
+msgstr ""
+
+#: Template/Passangers/view.ctp:38
+msgid "Province"
+msgstr ""
+
+#: Template/Passangers/view.ctp:42
+msgid "Pays"
+msgstr ""
+
+#: Template/Users/add.ctp:4 Template/Users/edit.ctp:10
+#: Template/Users/view.ctp:6
+msgid "List Users"
+msgstr ""
+
+#: Template/Users/add.ctp:10
+msgid "Add User"
+msgstr ""
+
+#: Template/Users/edit.ctp:16 Template/Users/view.ctp:4
+msgid "Edit User"
+msgstr ""
+
+#: Template/Users/index.ctp:4 Template/Users/view.ctp:7
+msgid "New User"
+msgstr ""
+
+#: Template/Users/index.ctp:8
+msgid "Users"
+msgstr "Usuarios"
+
+#: Template/Users/login.ctp:7
+msgid "Merci de rentrer vos nom d'utilisateur et mot de passe"
+msgstr ""
+
+#: Template/Users/login.ctp:8
+msgid "username"
+msgstr "Nombre de usuario"
+
+#: Template/Users/login.ctp:9
+msgid "password"
+msgstr "contraseña"
+
+#: Template/Users/login.ctp:11
+msgid "Se Connecter"
+msgstr "Conectarse"
+
+#: Template/Users/view.ctp:5
+msgid "Delete User"
+msgstr ""
+
+#: Template/Users/view.ctp:14
+msgid "Username"
+msgstr "Nombre de usuario"
+
+#: Template/Users/view.ctp:18
+msgid "Password"
+msgstr "contraseña"
+
+#: Template/Users/view.ctp:22
+msgid "Role"
+msgstr "Rol"
+
+#: Template/Users/view.ctp:30
+msgid "Created"
+msgstr "Creado"
+
+#: Template/Users/view.ctp:34
+msgid "Modified"
+msgstr "Modificado"

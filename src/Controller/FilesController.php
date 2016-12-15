@@ -13,15 +13,15 @@ class FilesController extends AppController
 
   public function initialize(){
         parent::initialize();
-        
         // Include the FlashComponent
         $this->loadComponent('Flash');
-        
         // Load Files model
         $this->loadModel('Files');
-	
     }
-    
+    	public function isAuthorized($user)
+	{
+		return parent::isAuthorized($user);
+	}
 	
 	
     /**

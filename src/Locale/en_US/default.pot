@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2016-09-21 20:14+0000\n"
+"POT-Creation-Date: 2016-11-23 14:44-0500\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -13,6 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 1.8.9\n"
 
 #: Controller/AppController.php:92
 msgid "Invalid username or password, try again"
@@ -98,81 +99,51 @@ msgstr ""
 msgid "The user could not be deleted. Please, try again."
 msgstr ""
 
-#: Template/Bookings/add.ctp:3
-#: Template/Bookings/edit.ctp:3
-#: Template/Bookings/index.ctp:3;20
-#: Template/Bookings/view.ctp:3;41
-#: Template/JourneyLegs/add.ctp:3
-#: Template/JourneyLegs/edit.ctp:3
-#: Template/JourneyLegs/index.ctp:3;19
-#: Template/JourneyLegs/view.ctp:3
-#: Template/Legs/add.ctp:3
-#: Template/Legs/edit.ctp:3
-#: Template/Legs/index.ctp:3;17
-#: Template/Legs/view.ctp:3;35
-#: Template/Passangers/add.ctp:3
-#: Template/Passangers/edit.ctp:3
-#: Template/Passangers/index.ctp:3;21
-#: Template/Passangers/view.ctp:3
-#: Template/Users/add.ctp:3
-#: Template/Users/edit.ctp:3
-#: Template/Users/index.ctp:3;18
-#: Template/Users/view.ctp:3
+#: Template/Bookings/add.ctp:3 Template/Bookings/edit.ctp:3
+#: Template/Bookings/index.ctp:3;20 Template/Bookings/view.ctp:3;41
+#: Template/JourneyLegs/add.ctp:3 Template/JourneyLegs/edit.ctp:3
+#: Template/JourneyLegs/index.ctp:3;19 Template/JourneyLegs/view.ctp:3
+#: Template/Legs/add.ctp:3 Template/Legs/edit.ctp:3
+#: Template/Legs/index.ctp:3;17 Template/Legs/view.ctp:3;35
+#: Template/Passangers/add.ctp:3 Template/Passangers/edit.ctp:3
+#: Template/Passangers/index.ctp:3;21 Template/Passangers/view.ctp:3
+#: Template/Users/add.ctp:3 Template/Users/edit.ctp:3
+#: Template/Users/index.ctp:3;18 Template/Users/view.ctp:3
 msgid "Actions"
 msgstr ""
 
-#: Template/Bookings/add.ctp:4
-#: Template/Bookings/edit.ctp:10
-#: Template/Bookings/view.ctp:6
-#: Template/JourneyLegs/add.ctp:5
-#: Template/JourneyLegs/edit.ctp:11
-#: Template/JourneyLegs/index.ctp:5
+#: Template/Bookings/add.ctp:4 Template/Bookings/edit.ctp:10
+#: Template/Bookings/view.ctp:6 Template/JourneyLegs/add.ctp:5
+#: Template/JourneyLegs/edit.ctp:11 Template/JourneyLegs/index.ctp:5
 #: Template/JourneyLegs/view.ctp:8
 msgid "List Bookings"
 msgstr ""
 
-#: Template/Bookings/add.ctp:5
-#: Template/Bookings/edit.ctp:11
-#: Template/Bookings/index.ctp:5
-#: Template/Bookings/view.ctp:8
-#: Template/Passangers/add.ctp:4
-#: Template/Passangers/edit.ctp:10
+#: Template/Bookings/add.ctp:5 Template/Bookings/edit.ctp:11
+#: Template/Bookings/index.ctp:5 Template/Bookings/view.ctp:8
+#: Template/Passangers/add.ctp:4 Template/Passangers/edit.ctp:10
 #: Template/Passangers/view.ctp:6
 msgid "List Passangers"
 msgstr ""
 
-#: Template/Bookings/add.ctp:6
-#: Template/Bookings/edit.ctp:12
-#: Template/Bookings/index.ctp:6
-#: Template/Bookings/view.ctp:9
-#: Template/Passangers/index.ctp:4
-#: Template/Passangers/view.ctp:7
+#: Template/Bookings/add.ctp:6 Template/Bookings/edit.ctp:12
+#: Template/Bookings/index.ctp:6 Template/Bookings/view.ctp:9
+#: Template/Passangers/index.ctp:4 Template/Passangers/view.ctp:7
 msgid "New Passanger"
 msgstr ""
 
-#: Template/Bookings/add.ctp:7
-#: Template/Bookings/edit.ctp:13
-#: Template/Bookings/index.ctp:7
-#: Template/Bookings/view.ctp:10
-#: Template/JourneyLegs/add.ctp:4
-#: Template/JourneyLegs/edit.ctp:10
-#: Template/JourneyLegs/view.ctp:6
-#: Template/Legs/add.ctp:5
-#: Template/Legs/edit.ctp:11
-#: Template/Legs/index.ctp:5
-#: Template/Legs/view.ctp:8
+#: Template/Bookings/add.ctp:7 Template/Bookings/edit.ctp:13
+#: Template/Bookings/index.ctp:7 Template/Bookings/view.ctp:10
+#: Template/JourneyLegs/add.ctp:4 Template/JourneyLegs/edit.ctp:10
+#: Template/JourneyLegs/view.ctp:6 Template/Legs/add.ctp:5
+#: Template/Legs/edit.ctp:11 Template/Legs/index.ctp:5 Template/Legs/view.ctp:8
 msgid "List Journey Legs"
 msgstr ""
 
-#: Template/Bookings/add.ctp:8
-#: Template/Bookings/edit.ctp:14
-#: Template/Bookings/index.ctp:8
-#: Template/Bookings/view.ctp:11
-#: Template/JourneyLegs/index.ctp:4
-#: Template/JourneyLegs/view.ctp:7
-#: Template/Legs/add.ctp:6
-#: Template/Legs/edit.ctp:12
-#: Template/Legs/index.ctp:6
+#: Template/Bookings/add.ctp:8 Template/Bookings/edit.ctp:14
+#: Template/Bookings/index.ctp:8 Template/Bookings/view.ctp:11
+#: Template/JourneyLegs/index.ctp:4 Template/JourneyLegs/view.ctp:7
+#: Template/Legs/add.ctp:6 Template/Legs/edit.ctp:12 Template/Legs/index.ctp:6
 #: Template/Legs/view.ctp:9
 msgid "New Journey Leg"
 msgstr ""
@@ -181,63 +152,41 @@ msgstr ""
 msgid "Add Booking"
 msgstr ""
 
-#: Template/Bookings/add.ctp:21
-#: Template/Bookings/edit.ctp:28
-#: Template/JourneyLegs/add.ctp:20
-#: Template/JourneyLegs/edit.ctp:26
-#: Template/Legs/add.ctp:18
-#: Template/Legs/edit.ctp:24
-#: Template/Passangers/add.ctp:22
-#: Template/Passangers/edit.ctp:28
-#: Template/Users/add.ctp:17
-#: Template/Users/edit.ctp:23
+#: Template/Bookings/add.ctp:21 Template/Bookings/edit.ctp:28
+#: Template/JourneyLegs/add.ctp:20 Template/JourneyLegs/edit.ctp:26
+#: Template/Legs/add.ctp:18 Template/Legs/edit.ctp:24
+#: Template/Passangers/add.ctp:22 Template/Passangers/edit.ctp:28
+#: Template/Users/add.ctp:17 Template/Users/edit.ctp:23
 msgid "Submit"
 msgstr ""
 
-#: Template/Bookings/edit.ctp:5
-#: Template/Bookings/index.ctp:33
-#: Template/Bookings/view.ctp:50
-#: Template/JourneyLegs/edit.ctp:5
-#: Template/JourneyLegs/index.ctp:31
-#: Template/Legs/edit.ctp:5
-#: Template/Legs/index.ctp:29
-#: Template/Legs/view.ctp:44
-#: Template/Passangers/edit.ctp:5
-#: Template/Passangers/index.ctp:39
-#: Template/Users/edit.ctp:5
-#: Template/Users/index.ctp:33
+#: Template/Bookings/edit.ctp:5 Template/Bookings/index.ctp:33
+#: Template/Bookings/view.ctp:50 Template/JourneyLegs/edit.ctp:5
+#: Template/JourneyLegs/index.ctp:31 Template/Legs/edit.ctp:5
+#: Template/Legs/index.ctp:29 Template/Legs/view.ctp:44
+#: Template/Passangers/edit.ctp:5 Template/Passangers/index.ctp:39
+#: Template/Users/edit.ctp:5 Template/Users/index.ctp:33
 msgid "Delete"
 msgstr ""
 
-#: Template/Bookings/edit.ctp:7
-#: Template/Bookings/index.ctp:33
-#: Template/Bookings/view.ctp:5;50
-#: Template/JourneyLegs/edit.ctp:7
-#: Template/JourneyLegs/index.ctp:31
-#: Template/JourneyLegs/view.ctp:5
-#: Template/Legs/edit.ctp:7
-#: Template/Legs/index.ctp:29
-#: Template/Legs/view.ctp:5;44
-#: Template/Passangers/edit.ctp:7
-#: Template/Passangers/index.ctp:39
-#: Template/Passangers/view.ctp:5
-#: Template/Users/edit.ctp:7
-#: Template/Users/index.ctp:33
+#: Template/Bookings/edit.ctp:7 Template/Bookings/index.ctp:33
+#: Template/Bookings/view.ctp:5;50 Template/JourneyLegs/edit.ctp:7
+#: Template/JourneyLegs/index.ctp:31 Template/JourneyLegs/view.ctp:5
+#: Template/Legs/edit.ctp:7 Template/Legs/index.ctp:29
+#: Template/Legs/view.ctp:5;44 Template/Passangers/edit.ctp:7
+#: Template/Passangers/index.ctp:39 Template/Passangers/view.ctp:5
+#: Template/Users/edit.ctp:7 Template/Users/index.ctp:33
 #: Template/Users/view.ctp:5
 msgid "Are you sure you want to delete # {0}?"
 msgstr ""
 
-#: Template/Bookings/edit.ctp:20
-#: Template/Bookings/view.ctp:4
+#: Template/Bookings/edit.ctp:20 Template/Bookings/view.ctp:4
 msgid "Edit Booking"
 msgstr ""
 
-#: Template/Bookings/index.ctp:4
-#: Template/Bookings/view.ctp:7
-#: Template/JourneyLegs/add.ctp:6
-#: Template/JourneyLegs/edit.ctp:12
-#: Template/JourneyLegs/index.ctp:6
-#: Template/JourneyLegs/view.ctp:9
+#: Template/Bookings/index.ctp:4 Template/Bookings/view.ctp:7
+#: Template/JourneyLegs/add.ctp:6 Template/JourneyLegs/edit.ctp:12
+#: Template/JourneyLegs/index.ctp:6 Template/JourneyLegs/view.ctp:9
 msgid "New Booking"
 msgstr ""
 
@@ -245,38 +194,28 @@ msgstr ""
 msgid "Bookings"
 msgstr ""
 
-#: Template/Bookings/index.ctp:31
-#: Template/Bookings/view.ctp:48
-#: Template/JourneyLegs/index.ctp:29
-#: Template/Legs/index.ctp:27
-#: Template/Legs/view.ctp:42
-#: Template/Passangers/index.ctp:37
+#: Template/Bookings/index.ctp:31 Template/Bookings/view.ctp:48
+#: Template/JourneyLegs/index.ctp:29 Template/Legs/index.ctp:27
+#: Template/Legs/view.ctp:42 Template/Passangers/index.ctp:37
 #: Template/Users/index.ctp:31
 msgid "View"
 msgstr ""
 
-#: Template/Bookings/index.ctp:32
-#: Template/Bookings/view.ctp:49
-#: Template/JourneyLegs/index.ctp:30
-#: Template/Legs/index.ctp:28
-#: Template/Legs/view.ctp:43
-#: Template/Passangers/index.ctp:38
+#: Template/Bookings/index.ctp:32 Template/Bookings/view.ctp:49
+#: Template/JourneyLegs/index.ctp:30 Template/Legs/index.ctp:28
+#: Template/Legs/view.ctp:43 Template/Passangers/index.ctp:38
 #: Template/Users/index.ctp:32
 msgid "Edit"
 msgstr ""
 
-#: Template/Bookings/index.ctp:41
-#: Template/JourneyLegs/index.ctp:39
-#: Template/Legs/index.ctp:37
-#: Template/Passangers/index.ctp:47
+#: Template/Bookings/index.ctp:41 Template/JourneyLegs/index.ctp:39
+#: Template/Legs/index.ctp:37 Template/Passangers/index.ctp:47
 #: Template/Users/index.ctp:41
 msgid "previous"
 msgstr ""
 
-#: Template/Bookings/index.ctp:43
-#: Template/JourneyLegs/index.ctp:41
-#: Template/Legs/index.ctp:39
-#: Template/Passangers/index.ctp:49
+#: Template/Bookings/index.ctp:43 Template/JourneyLegs/index.ctp:41
+#: Template/Legs/index.ctp:39 Template/Passangers/index.ctp:49
 #: Template/Users/index.ctp:43
 msgid "next"
 msgstr ""
@@ -289,10 +228,8 @@ msgstr ""
 msgid "Passanger"
 msgstr ""
 
-#: Template/Bookings/view.ctp:22
-#: Template/JourneyLegs/view.ctp:26
-#: Template/Legs/view.ctp:16
-#: Template/Passangers/view.ctp:46
+#: Template/Bookings/view.ctp:22 Template/JourneyLegs/view.ctp:26
+#: Template/Legs/view.ctp:16 Template/Passangers/view.ctp:46
 #: Template/Users/view.ctp:26
 msgid "Id"
 msgstr ""
@@ -305,37 +242,27 @@ msgstr ""
 msgid "Datebooking"
 msgstr ""
 
-#: Template/Bookings/view.ctp:35
-#: Template/Legs/view.ctp:29
+#: Template/Bookings/view.ctp:35 Template/Legs/view.ctp:29
 msgid "Related Journey Legs"
 msgstr ""
 
-#: Template/Bookings/view.ctp:39
-#: Template/Legs/view.ctp:33
+#: Template/Bookings/view.ctp:39 Template/Legs/view.ctp:33
 msgid "Booking Id"
 msgstr ""
 
-#: Template/Bookings/view.ctp:40
-#: Template/Legs/view.ctp:34
+#: Template/Bookings/view.ctp:40 Template/Legs/view.ctp:34
 msgid "Leg Id"
 msgstr ""
 
-#: Template/JourneyLegs/add.ctp:7
-#: Template/JourneyLegs/edit.ctp:13
-#: Template/JourneyLegs/index.ctp:7
-#: Template/JourneyLegs/view.ctp:10
-#: Template/Legs/add.ctp:4
-#: Template/Legs/edit.ctp:10
-#: Template/Legs/view.ctp:6
+#: Template/JourneyLegs/add.ctp:7 Template/JourneyLegs/edit.ctp:13
+#: Template/JourneyLegs/index.ctp:7 Template/JourneyLegs/view.ctp:10
+#: Template/Legs/add.ctp:4 Template/Legs/edit.ctp:10 Template/Legs/view.ctp:6
 msgid "List Legs"
 msgstr ""
 
-#: Template/JourneyLegs/add.ctp:8
-#: Template/JourneyLegs/edit.ctp:14
-#: Template/JourneyLegs/index.ctp:8
-#: Template/JourneyLegs/view.ctp:11
-#: Template/Legs/index.ctp:4
-#: Template/Legs/view.ctp:7
+#: Template/JourneyLegs/add.ctp:8 Template/JourneyLegs/edit.ctp:14
+#: Template/JourneyLegs/index.ctp:8 Template/JourneyLegs/view.ctp:11
+#: Template/Legs/index.ctp:4 Template/Legs/view.ctp:7
 msgid "New Leg"
 msgstr ""
 
@@ -343,8 +270,7 @@ msgstr ""
 msgid "Add Journey Leg"
 msgstr ""
 
-#: Template/JourneyLegs/edit.ctp:20
-#: Template/JourneyLegs/view.ctp:4
+#: Template/JourneyLegs/edit.ctp:20 Template/JourneyLegs/view.ctp:4
 msgid "Edit Journey Leg"
 msgstr ""
 
@@ -376,8 +302,7 @@ msgstr ""
 msgid "Add Leg"
 msgstr ""
 
-#: Template/Legs/edit.ctp:18
-#: Template/Legs/view.ctp:4
+#: Template/Legs/edit.ctp:18 Template/Legs/view.ctp:4
 msgid "Edit Leg"
 msgstr ""
 
@@ -401,8 +326,7 @@ msgstr ""
 msgid "Add Passanger"
 msgstr ""
 
-#: Template/Passangers/edit.ctp:16
-#: Template/Passangers/view.ctp:4
+#: Template/Passangers/edit.ctp:16 Template/Passangers/view.ctp:4
 msgid "Edit Passanger"
 msgstr ""
 
@@ -446,8 +370,7 @@ msgstr ""
 msgid "Pays"
 msgstr ""
 
-#: Template/Users/add.ctp:4
-#: Template/Users/edit.ctp:10
+#: Template/Users/add.ctp:4 Template/Users/edit.ctp:10
 #: Template/Users/view.ctp:6
 msgid "List Users"
 msgstr ""
@@ -456,13 +379,11 @@ msgstr ""
 msgid "Add User"
 msgstr ""
 
-#: Template/Users/edit.ctp:16
-#: Template/Users/view.ctp:4
+#: Template/Users/edit.ctp:16 Template/Users/view.ctp:4
 msgid "Edit User"
 msgstr ""
 
-#: Template/Users/index.ctp:4
-#: Template/Users/view.ctp:7
+#: Template/Users/index.ctp:4 Template/Users/view.ctp:7
 msgid "New User"
 msgstr ""
 
@@ -509,4 +430,3 @@ msgstr ""
 #: Template/Users/view.ctp:34
 msgid "Modified"
 msgstr ""
-
