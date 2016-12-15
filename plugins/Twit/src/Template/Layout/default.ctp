@@ -38,13 +38,9 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+		
 		  <?=  $this->Html->link(__('Africa AirLine'),['controller' =>'Passangers','action' => 'index'],['class'=>'navbar-brand'] )?>
+
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">	
@@ -83,6 +79,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <?= $this->Flash->render(); ?>
 		<?= $this->Flash->render('auth'); ?>
         <?= $this->fetch('content'); ?>
+	
 		
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>

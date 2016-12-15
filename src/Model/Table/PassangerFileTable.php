@@ -36,7 +36,7 @@ class PassangerFileTable extends Table
         $this->table('passanger_file');
         $this->displayField('id');
         $this->primaryKey('id');
-
+		$this->addBehavior('Translate', ['fields' => ['prenom','nom']]);
         $this->belongsTo('Passangers', [
             'foreignKey' => 'passanger_id',
             'joinType' => 'INNER'

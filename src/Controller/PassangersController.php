@@ -64,12 +64,15 @@ class PassangersController extends AppController
 		$passanger = $this->Passangers->newEntity();
         if ($this->request->is('post')) {
 				$passanger = $this->Passangers->patchEntity($passanger, $this->request->data);
-			
+				
 				$poys = $this->Pays->get($passanger->pays_id, [
 					'contain' => []
 				]);
 				$passanger->pays = $poys->nom;
 				$passanger->province = $passanger->province_id;
+				if($passanger->province === '1'){
+					$passanger->province = 'Quebec';
+				}
 				if ($this->Passangers->save($passanger)) {
 					$this->Flash->success(__('The passanger has been saved.'));
 

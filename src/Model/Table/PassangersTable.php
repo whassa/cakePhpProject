@@ -37,7 +37,7 @@ class PassangersTable extends Table
         $this->displayField('prenom');
         $this->primaryKey('id');
 		
-		//$this->addBehavior('Translate', ['fields' => ['prenom']]);
+		$this->addBehavior('Translate', ['fields' => ['prenom','nom']]);
 		
         $this->hasMany('Bookings', [
             'foreignKey' => 'passanger_id'
